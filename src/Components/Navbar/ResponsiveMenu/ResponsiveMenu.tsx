@@ -37,7 +37,7 @@ const dispatch = useDispatch<AppDispatch>()
                     <Separator/>
                     <NavLinkStyled href='/aboutus' onClick={(): void =>{dispatch(showMenu())}}>Sobre Nosotros</NavLinkStyled>
                     <Separator/>
-                    <NavLinkStyled href='/Contacto' onClick={(): void =>{dispatch(showMenu())}}>Contactanos</NavLinkStyled>
+                    <NavLinkStyled href='/contact' onClick={(): void =>{dispatch(showMenu())}}>Contactanos</NavLinkStyled>
                     <Separator/>
                     <ScrollLink onClick={(): void  => {window.scrollTo(0, 10000); dispatch(showMenu())}}>Mas Info</ScrollLink>
 
