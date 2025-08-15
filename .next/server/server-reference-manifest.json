@@ -1,0 +1,17 @@
+{
+  "node": {
+    "7fb55d4102d4c9077149a7945fafc3659a71497e1f": {
+      "workers": {
+        "app/register/page": {
+          "moduleId": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CMatias%5C%5COneDrive%5C%5CEscritorio%5C%5CProgramacion%5C%5CProyectos-CV%5C%5CE-commerce%5C%5CeCommerce-Next%5C%5Csrc%5C%5Capp%5C%5Cregister%5C%5Cactions.ts%22%2C%5B%7B%22id%22%3A%227fb55d4102d4c9077149a7945fafc3659a71497e1f%22%2C%22exportedName%22%3A%22registerUser%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/register/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "Kq+6Hsy3R+UJTZy41XcNbqGmxstriQ1m459gdtcZmS4="
+}
