@@ -48,8 +48,8 @@ const ContactForm = () => {
         onSubmit={(value, { resetForm }) => {
           if (form.current) {
             sendEmailAction(form.current);
-            resetForm();
           }
+          resetForm();
         }
         }>
 
