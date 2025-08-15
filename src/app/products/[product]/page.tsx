@@ -69,7 +69,7 @@ const ProductoDinamico: React.FC = () => {
 
                     <CuotasContainer>
                         <span>12 Cuotas sin interés abonando con</span>
-                        <img src='/img/Visa.png' alt="LogoVisa" />
+                        <img src='/img/Visa.png' alt="Logo Visa" />
                     </CuotasContainer>
 
                     <Button productoDinamico={true} onClick={() => {

@@ -21,7 +21,7 @@ const IntroPageContainer: React.FC<IntroPAgeProps> = ({background, title}) => {
 
             <NumeroCuotas>12</NumeroCuotas>
             <CuotasSinInteresContainer>CUOTAS SIN INTERÉS
-                <img src='/img/VIsa.png' alt="Visa" />
+                <img src='/img/Visa.png' alt="Logo Visa" />
             </CuotasSinInteresContainer>
         </DoceCuotasSinInteresContainer>
         <span>O 20% DE DESCUENTO EN EFECTIVO ABONANDO EN NUESTRAS SUCURSALES</span>
