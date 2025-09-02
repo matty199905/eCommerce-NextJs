@@ -2,16 +2,16 @@
 import React from 'react';
 import { LoginWrapper, NoTengoCuenta } from './pageStyled';
 import { Formik } from 'formik';
-import Input from '@/UI/Input/Input';
+import Input from '@/Components/UI/Input/Input';
 import { LoginFormContainer } from './pageStyled';
-import Submit from '@/UI/Submit/Submit';
+import Submit from '@/Components/UI/Submit/Submit';
 import { loginInitialValues } from '@/Formik/InitialValues';
 import { loginValidationSchema } from '@/Formik/ValidationSchema';
 import { loginUser } from '@/Axios/axiosUser';
 import { useRouter } from 'next/navigation';
 import { useDispatch } from 'react-redux'
 import { setCurrentUser } from '@/Redux/User/userSlice'
-import Loader from '@/UI/Loader/Loader'
+import Loader from '@/Components/UI/Loader/Loader'
 import { AppDispatch } from '@/Redux/store';
 
 

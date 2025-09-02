@@ -1,7 +1,7 @@
 import React from 'react'
 import { Price, ProductCardContainer, ColumnContainer, TitlePriceContainer } from './ProductCardStyle'
 
-import Button from '../../../UI/Button/Button'
+import Button from '../../UI/Button/Button'
 import Link from "next/link";
 import { formatPrice } from '../../../Utils/formatPrice'
 

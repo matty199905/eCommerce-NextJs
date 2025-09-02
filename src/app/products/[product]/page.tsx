@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { CuotasContainer, Price, PriceOFF, PricesOffContainer, ProductCardContainer, ProductDetailsContainer, ProductImgContainer, ProductWrapper } from './pageStyled';
-import Button from '@/UI/Button/Button';
+import Button from '@/Components/UI/Button/Button';
 import { formatPrice } from '@/Utils/formatPrice';
 import { useDispatch } from 'react-redux';
 import { addToCart, showCartToggle } from '@/Redux/Cart/cartSlice';

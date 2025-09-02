@@ -3,12 +3,12 @@ import React, { useRef } from 'react';
 import { Formik } from 'formik';
 import { contactInitialValues } from '../../Formik/InitialValues';
 import { contactValidationSchema } from '../../Formik/ValidationSchema';
-import Input from '../../UI/Input/Input';
-import Submit from '../../UI/Submit/Submit';
-import Textarea from '../../UI/Input/Textarea';
+import Input from '../UI/Input/Input';
+import Submit from '../UI/Submit/Submit';
+import Textarea from '../UI/Input/Textarea';
 import { FormContainer, FormikContainer } from './contactFormStyled';
 import emailjs from '@emailjs/browser';
-import Loader from '@/UI/Loader/Loader';
+import Loader from '@/Components/UI/Loader/Loader';
 
 
 const ContactForm = () => {
@@ -36,6 +36,10 @@ const ContactForm = () => {
 
 
 
+  function setFieldValue(arg0: string, files: any) {
+    throw new Error('Function not implemented.');
+  }
+
   return (
     <FormikContainer>
 
@@ -45,7 +49,7 @@ const ContactForm = () => {
       <Formik
         initialValues={contactInitialValues}
         validationSchema={contactValidationSchema}
-        onSubmit={(value, { resetForm }) => {
+        onSubmit={(value, {resetForm }) => {
           if (form.current) {
             sendEmailAction(form.current);
           }
@@ -55,8 +59,7 @@ const ContactForm = () => {
 
         {
 
-          ({ isSubmitting }) =>
-
+          ({ isSubmitting, setFieldValue }) =>
 
             <FormContainer ref={form}>
 
@@ -87,12 +90,15 @@ const ContactForm = () => {
                 label="Mensaje"
                 asunto={true} />
 
+        
 
               <Submit
                 contact={true}
-              >{isSubmitting ? <Loader/> : 'Enviar'}</Submit>
+              >{isSubmitting ? <Loader /> : 'Enviar'}
+              </Submit>
 
             </FormContainer>
+
         }
 
 

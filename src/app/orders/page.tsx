@@ -8,7 +8,7 @@ import { getOrders } from '@/Axios/axiosOrders';
 import { fetchOrdersEnd } from '@/Redux/Orders/ordersSlice';
 import { useSelectorTS } from '@/Utils/constants';
 import { AppDispatch } from '@/Redux/store';
-import Loader from '@/UI/Loader/Loader';
+import Loader from '@/Components/UI/Loader/Loader';
 import { useRouter } from 'next/navigation';
 
 
@@ -93,8 +93,10 @@ const Orders: React.FC = () => {
 
             <InstructionsContainer>
                 <h3>Instrucciones a seguir:</h3>
-                <p>Contactanos desde la seccion "Contactanos", indicando el <b>ID de la orden</b> y te enviaremos todos los datos para proseguir con la compra.</p>
+                <p>Contactanos desde la seccion "Contactanos", indicando el <b>ID de la orden</b> para proceder con la compra.<br/><br/>
+                <b>¡Gracias por su confianza!</b></p>
             </InstructionsContainer>
+
         </OrdersWrapper>
     )
 }

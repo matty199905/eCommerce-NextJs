@@ -26,9 +26,13 @@ const Contact: React.FC = () => {
 
       </ContactImg>
 
+
+
       <ContactForm />
 
-    </ContactWrapper >
+
+
+    </ContactWrapper>
   )
 }
 

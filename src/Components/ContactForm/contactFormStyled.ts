@@ -28,7 +28,6 @@ text-align: center;
 export const FormContainer = styled(Form)`
 display: flex;
 justify-content: center;
-align-items:center;
 flex-flow: row wrap;
 gap: 20px;
 width: 80vw;

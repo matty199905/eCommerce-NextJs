@@ -2,13 +2,13 @@
 import React from 'react';
 import { FormContainer, RegisterWrapper, YaEstoyRegistrado } from './pageStyled';
 import { Formik } from 'formik';
-import Input from '@/UI/Input/Input';
+import Input from '@/Components/UI/Input/Input';
 import { registerInitialValues } from '@/Formik/InitialValues';
-import Submit from '@/UI/Submit/Submit';
+import Submit from '@/Components/UI/Submit/Submit';
 import { registerValidationSchema } from '@/Formik/ValidationSchema';
 import { createUser } from '@/Axios/axiosUser';
 import { useRouter } from 'next/navigation';
-import Loader from '@/UI/Loader/Loader';
+import Loader from '@/Components/UI/Loader/Loader';
 
 
 

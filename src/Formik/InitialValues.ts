@@ -1,21 +1,23 @@
 
 type ContactIV = {
-    user_name:string,
-    user_email:string,
-    message:string,
+    user_name: string,
+    user_email: string,
+    message: string,
+
 }
 
 export const contactInitialValues: ContactIV = {
     user_name: "",
     user_email: "",
     message: "",
+
 }
 
 export type RegisterIV = {
-    name:string,
-    email:string,
-    password:string,
-    password2:string,
+    name: string,
+    email: string,
+    password: string,
+    password2: string,
 }
 
 export const registerInitialValues: RegisterIV = {
@@ -26,8 +28,8 @@ export const registerInitialValues: RegisterIV = {
 }
 
 type LoginIV = {
-    email:string,
-    password:string,
+    email: string,
+    password: string,
 }
 
 export const loginInitialValues: LoginIV = {
@@ -36,10 +38,10 @@ export const loginInitialValues: LoginIV = {
 }
 
 type CheckoutIV = {
-    name:string,
-    cellphone:string,
-    location:string,
-    address:string,
+    name: string,
+    cellphone: string,
+    location: string,
+    address: string,
 }
 
 export const checkoutInitialValues: CheckoutIV = {

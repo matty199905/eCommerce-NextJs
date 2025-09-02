@@ -1,7 +1,6 @@
 import React from 'react'
 import { CheckoutContainer, FormContainer, FormikContainer } from './CheckoutFormStyled';
-import Submit from '../../../UI/Submit/Submit';
-import Input from '../../../UI/Input/Input';
+import Input from '../../UI/Input/Input';
 import { checkoutInitialValues } from '../../../Formik/InitialValues';
 import { checkoutValidationSchema } from '../../../Formik/ValidationSchema';
 import { useDispatch } from 'react-redux'
@@ -11,7 +10,8 @@ import { removeAllFromCart } from '../../../Redux/Cart/cartSlice';
 import { clearError } from '../../../Redux/Orders/ordersSlice';
 import { useSelectorTS } from '../../../Utils/constants';
 import { AppDispatch } from '../../../Redux/store';
-import Loader from '@/UI/Loader/Loader';
+import Loader from '@/Components/UI/Loader/Loader';
+import MPBtn from '@/Components/MPBtn/MPBtn';
 
 
 
@@ -96,9 +96,8 @@ const CheckoutForm: React.FC = () => {
               placeholder='Tu nombre'
               label="Nombre"
               checkout={true}
-            >
+            />
 
-            </Input>
 
             <Input
               name='cellphone'
@@ -108,9 +107,8 @@ const CheckoutForm: React.FC = () => {
               placeholder='Tu celular'
               label="Celular"
               checkout={true}
-            >
+            />
 
-            </Input>
 
             <Input
               name='location'
@@ -120,9 +118,9 @@ const CheckoutForm: React.FC = () => {
               placeholder='Tu localidad'
               label="Localidad"
               checkout={true}
-            >
+            />
 
-            </Input>
+
 
             <Input
               name='address'
@@ -132,17 +130,14 @@ const CheckoutForm: React.FC = () => {
               placeholder='Tu dirección'
               label="Dirección"
               checkout={true}
-            >
-
-            </Input>
+            />
 
 
-            <Submit
-              checkout={true}>
 
-              {isSubmitting ? <Loader/> : 'Iniciar pedido'}
-
-            </Submit>
+      
+            <MPBtn price={totalPrice + shippingCost}>
+               {isSubmitting ? <Loader/> : 'Iniciar pedido'}
+            </MPBtn>
 
 
           </FormContainer>

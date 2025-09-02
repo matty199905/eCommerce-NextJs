@@ -33,7 +33,11 @@ h1{
     letter-spacing: 2px;
     color:white;
     opacity: 0.9;
-    margin-top: -100px;}
+    margin-top: -100px;
+    @media (max-width: 380px) {
+font-size: 50px;
+}
+    }
 `
 
 export const ContactIconStyled = styled.div`

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { PagesContainer, ProductsContainerStyled } from './ProductsWrapper&ContainerStyled'
 import ModalCategories from '../ModalCategories/ModalCategories'
 import ProductCard from '../ProductCard/ProductCard'
-import Button from '@/UI/Button/Button'
+import Button from '@/Components/UI/Button/Button'
 import { useSelectorTS } from '@/Utils/constants'
 import { Product } from '@/Data/productsData'
 

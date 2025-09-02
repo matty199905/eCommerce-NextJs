@@ -2,7 +2,7 @@
 import React from 'react'
 import { CartHeader, CloseIcon, IconsContainer, ModalCartContainer, PriceContainer, ProductInfoContainer, ProductsCartContainer, TitleContainer } from './ModalCartStyled'
 import { IoIosArrowRoundForward } from "react-icons/io";
-import Submit from '../../../../UI/Submit/Submit'
+import Submit from '../../../UI/Submit/Submit'
 import CardCartProduct from './CardCartProduct';
 import { GoTrash } from "react-icons/go";
 import { useRouter } from 'next/navigation';

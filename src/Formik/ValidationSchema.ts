@@ -27,6 +27,8 @@ export const contactValidationSchema = Yup.object({
         .required('Campo Requerido')
         .max(200, 'Máximo 200 caracteres')
         .min(20, 'Mínimo 20 caracteres'),
+
+   
 })
 
 
