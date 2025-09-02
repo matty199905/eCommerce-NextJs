@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 
 export const BtnStyled = styled.button`
+align-self: center;
 width: 200px;
 height: 50px;
 padding: 10px;
