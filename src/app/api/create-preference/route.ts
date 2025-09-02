@@ -32,7 +32,6 @@ export async function POST(req: Request) {
 
     return NextResponse.json(data);
   } catch (error) {
-    NextResponse.json({ error: "Error creando preferencia" }, { status: 500 });
     console.log("Error creando preferencia", error)
   }
 }
