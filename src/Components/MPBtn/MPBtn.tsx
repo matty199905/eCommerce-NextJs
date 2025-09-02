@@ -1,5 +1,7 @@
 "use client";
 import { useEffect } from "react";
+import { BtnStyled } from "./BtnStyled";
+
 
 type BtnProps = {
     price: number
@@ -45,11 +47,11 @@ const MPBtn: React.FC<BtnProps> = ({price}) => {
   };
 
   return (
-      <button
+      <BtnStyled
         onClick={handlePago}
       >
         Pagar con Mercado Pago
-      </button>
+      </BtnStyled>
   );
 }
 
