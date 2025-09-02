@@ -31,7 +31,11 @@ export async function POST(req: Request) {
     const data = await response.json();
 
     return NextResponse.json(data);
-  } catch (error) {
-    console.log("Error creando preferencia", error)
-  }
+  } catch (error: any) {
+  console.error("Error creando preferencia:", error);
+  return NextResponse.json(
+    { error: error.message || error },
+    { status: 500 }
+  );
+}
 }

@@ -34,6 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
           <Footer />
         </ReduxProvider>
+        <script src="https://sdk.mercadopago.com/js/v2"></script>
       </body>
     </html>
   )
