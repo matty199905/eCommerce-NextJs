@@ -28,11 +28,11 @@
 
 ---
 
-🚀 Instalación y Uso
+## 🚀 Instalación y Uso
 Clonar el repositorio:
 git clone https://github.com/usuario/eCommerce-NextJs.git
 
-Instalar dependencias:
+## Instalar dependencias:
 npm install
 
 ## ⚙️ Variables de Entorno
